@@ -1,11 +1,9 @@
 import streamlit as st
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate
-
+from langchain_community.document_loaders import WebBaseLoader as web
 
 from langchain_groq import ChatGroq
-
-from loaders import *
 
 TIPOS_ARQUIVOS_VALIDOS = [
     'Glossário Marketing', 
@@ -20,6 +18,11 @@ CONFIG_MODELOS = {'Groq':
 
 MEMORIA = ConversationBufferMemory()
 
+def carrega_site(url):
+    loader = web(url)
+    lista_documentos = loader.load()
+    documento = '\n\n'.join([doc.page_content for doc in lista_documentos])
+    return documento
 
 
 def carrega_arquivos(tipo_arquivo, arquivo):
