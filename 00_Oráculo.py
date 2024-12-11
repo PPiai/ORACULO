@@ -94,7 +94,7 @@ def sidebar():
         if tipo_arquivo == 'Livro Top Secret - Cientista':
             arquivo = 'https://heyzine.com/flip-book/d33a44284a.html'
         if tipo_arquivo == 'Processo GT':
-            arquivo = 'Processo GT'
+            arquivo = 'https://heyzine.com/flip-book/e2ddfc52cc.html'
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
