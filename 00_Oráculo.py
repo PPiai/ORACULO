@@ -88,10 +88,10 @@ def sidebar():
     with tabs[0]:
         tipo_arquivo = st.selectbox('Selecione a Base de Conhecimento', TIPOS_ARQUIVOS_VALIDOS)
         if tipo_arquivo == 'Todos':
-            arquivo = {"Glossário Marketing" : 'https://vendas.v4company.com/glossario-marketing/',
-                       'Livro Cientista do Marketing' : 'https://heyzine.com/flip-book/87da189f45.html',
-                       'Livro Top Secret - Cientista' : 'https://heyzine.com/flip-book/d33a44284a.html',
-                      'V4 Company' : 'https://v4company.com/assessoria-de-marketing-digital'}
+            arquivo = ['https://vendas.v4company.com/glossario-marketing/',
+                       'https://heyzine.com/flip-book/87da189f45.html',
+                       'https://heyzine.com/flip-book/d33a44284a.html',
+                      'https://v4company.com/assessoria-de-marketing-digital']
         if tipo_arquivo == 'Glossário Marketing':
             arquivo = 'https://vendas.v4company.com/glossario-marketing/'
         if tipo_arquivo == 'Livro Cientista do Marketing':
