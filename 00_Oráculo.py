@@ -86,7 +86,7 @@ def pagina_chat():
 def sidebar():
     tabs = st.tabs(['Upload de Arquivos', 'Modelo da IA'])
     with tabs[0]:
-        st.markdown(f'<h5 style="text-align: center;">inteligência V4 Ferraz Piai & CO 1.0 </h5>', unsafe_allow_html=True)
+        st.markdown(f'<h5 style="text-align: center;">Inteligência V4 Ferraz Piai & CO 1.0 </h5>', unsafe_allow_html=True)
         tipo_arquivo = "Base de Conhecimento v4"
         arquivo = ['https://vendas.v4company.com/glossario-marketing/',
                     'https://heyzine.com/flip-book/87da189f45.html',
