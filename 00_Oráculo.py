@@ -6,7 +6,7 @@ from langchain_community.document_loaders import WebBaseLoader as web
 from langchain_groq import ChatGroq
 
 TIPOS_ARQUIVOS_VALIDOS = [
-    'Todos',
+    'V4 Company',
     'Glossário Marketing', 
     'Livro Top Secret - Cientista', 
     'Livro Cientista do Marketing'
