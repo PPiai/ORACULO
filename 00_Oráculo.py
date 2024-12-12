@@ -84,7 +84,7 @@ def pagina_chat():
 
 
 def sidebar():
-    tabs = st.tabs(['Upload de Arquivos', 'Seleção de Modelos'])
+    tabs = st.tabs(['Upload de Arquivos', 'Modelo da IA'])
     with tabs[0]:
         tipo_arquivo = st.selectbox('Selecione a Base de Conhecimento', TIPOS_ARQUIVOS_VALIDOS)
         if tipo_arquivo == 'Glossário Marketing':
@@ -99,7 +99,7 @@ def sidebar():
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
 
-        st.markdown(f'<h5 style="text-align: center;">Modelo da IA: gemma2-9b-it </h5>', unsafe_allow_html=True)
+        st.markdown(f'<h5 style="text-align: center;">Modelo da IA: llama-3.3-70b-versatile </h5>', unsafe_allow_html=True)
         modelo = 'llama-3.3-70b-versatile'
 
         st.markdown(f'<h5 style="text-align: center;">Api do {provedor} ja inserida </h5>', unsafe_allow_html=True)
