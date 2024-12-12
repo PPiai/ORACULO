@@ -9,7 +9,7 @@ TIPOS_ARQUIVOS_VALIDOS = [
     'Glossário Marketing', 
     'Livro Top Secret - Cientista', 
     'Livro Cientista do Marketing',
-    'Processo GT'
+    'Todos'
 ]
 
 CONFIG_MODELOS = {'Groq': 
@@ -93,8 +93,10 @@ def sidebar():
             arquivo = 'https://heyzine.com/flip-book/87da189f45.html'
         if tipo_arquivo == 'Livro Top Secret - Cientista':
             arquivo = 'https://heyzine.com/flip-book/d33a44284a.html'
-        if tipo_arquivo == 'Processo GT':
-            arquivo = 'https://heyzine.com/flip-book/e2ddfc52cc.html'
+        if tipo_arquivo == 'Todos':
+            arquivo = ['https://vendas.v4company.com/glossario-marketing/',
+                       'https://heyzine.com/flip-book/87da189f45.html',
+                       'https://heyzine.com/flip-book/d33a44284a.html']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
