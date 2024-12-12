@@ -30,7 +30,7 @@ def carrega_arquivos(tipo_arquivo, arquivo):
         documento = carrega_site(arquivo)
 
 def carrega_modelo(provedor, modelo, api_key, tipo_arquivo, arquivo):
-    system_message = f'''Você é um assistente amigável chamado Oráculo, e não pode compartilhar links apenas o nome que encontrar dentro dos documentos.
+    system_message = f'''Você é um assistente amigável chamado Oráculo, e NÃO pode compartilhar links apenas o nome que encontrar dentro dos documentos (o compartilhamento de links só pode ser feito se solicitado pelo usuário).
 Você possui acesso às seguintes informações vindas 
 de um documento {tipo_arquivo}: 
 
