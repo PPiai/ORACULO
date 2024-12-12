@@ -86,11 +86,12 @@ def pagina_chat():
 def sidebar():
     tabs = st.tabs(['Upload de Arquivos', 'Modelo da IA'])
     with tabs[0]:
-        tipo_arquivo = st.selectbox('Selecione a Base de Conhecimento', TIPOS_ARQUIVOS_VALIDOS)
+        st.markdown(f'<h5 style="text-align: center;">inteligência V4 Ferraz Piai & CO 1.0 </h5>', unsafe_allow_html=True)
+        tipo_arquivo = "Base de Conhecimento v4"
         arquivo = ['https://vendas.v4company.com/glossario-marketing/',
                     'https://heyzine.com/flip-book/87da189f45.html',
                     'https://heyzine.com/flip-book/d33a44284a.html',
-                    'https://v4company.com/assessoria-de-marketing-digital']
+                    'https://v4company.com/']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
