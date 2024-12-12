@@ -6,10 +6,10 @@ from langchain_community.document_loaders import WebBaseLoader as web
 from langchain_groq import ChatGroq
 
 TIPOS_ARQUIVOS_VALIDOS = [
+    'Todos',
     'Glossário Marketing', 
     'Livro Top Secret - Cientista', 
-    'Livro Cientista do Marketing',
-    'Todos'
+    'Livro Cientista do Marketing'
 ]
 
 CONFIG_MODELOS = {'Groq': 
@@ -40,7 +40,7 @@ de um documento {tipo_arquivo}:
 
 Utilize as informações fornecidas para basear as suas respostas.
 
-Sempre que houver $ na sua saída, substita por S.
+Sempre que houver $ na sua saída, substita por R$.
 
 Se a informação do documento for algo como "Just a moment...Enable JavaScript and cookies to continue" 
 sugira ao usuário carregar novamente o Oráculo!'''
