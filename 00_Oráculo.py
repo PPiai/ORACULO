@@ -13,7 +13,7 @@ TIPOS_ARQUIVOS_VALIDOS = [
 ]
 
 CONFIG_MODELOS = {'Groq': 
-                        {'modelos': 'gemma2-9b-it',
+                        {'modelos': 'llama-3.3-70b-versatile',
                          'chat': ChatGroq}
                          }
 
@@ -100,7 +100,7 @@ def sidebar():
         provedor = 'Groq'
 
         st.markdown(f'<h5 style="text-align: center;">Modelo da IA: gemma2-9b-it </h5>', unsafe_allow_html=True)
-        modelo = 'gemma2-9b-it'
+        modelo = 'llama-3.3-70b-versatile'
 
         st.markdown(f'<h5 style="text-align: center;">Api do {provedor} ja inserida </h5>', unsafe_allow_html=True)
         api_key = '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'
