@@ -10,7 +10,8 @@ TIPOS_ARQUIVOS_VALIDOS = [
     'Glossário Marketing', 
     'Livro Top Secret - Cientista', 
     'Livro Cientista do Marketing',
-    'Docs'
+    'Docs',
+    'Planilha Clientes'
 ]
 
 CONFIG_MODELOS = {'Groq': 
