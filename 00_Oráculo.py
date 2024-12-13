@@ -10,8 +10,7 @@ TIPOS_ARQUIVOS_VALIDOS = [
     'Glossário Marketing', 
     'Livro Top Secret - Cientista', 
     'Livro Cientista do Marketing',
-    'Docs',
-    'Planilha Clientes'
+    'Docs'
 ]
 
 CONFIG_MODELOS = {'Groq': 
@@ -94,8 +93,7 @@ def sidebar():
                     'https://heyzine.com/flip-book/87da189f45.html',
                     'https://heyzine.com/flip-book/d33a44284a.html',
                     'https://v4company.com/', 
-                    'https://docs.google.com/document/d/1N0PggtNXzRxU7DSmgXLJNtDHVv7vGisLLhF1hC7aXAM/edit?usp=sharing',
-                    'https://docs.google.com/spreadsheets/d/1u_7E3s8h7-kqmVu8I46Pxvtu2UVe079LVagXej8vLqg/edit?usp=sharing']
+                    'https://docs.google.com/document/d/1N0PggtNXzRxU7DSmgXLJNtDHVv7vGisLLhF1hC7aXAM/edit?usp=sharing']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
