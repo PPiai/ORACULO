@@ -94,7 +94,13 @@ def sidebar():
                     'https://heyzine.com/flip-book/87da189f45.html',
                     'https://heyzine.com/flip-book/d33a44284a.html',
                     'https://v4company.com/', 
-                    'https://v4-ferraz.notion.site/Rotina-Ideal-de-um-Gestor-de-Tr-fego-a0a00d187619424ea1c165bb79ab4370?pvs=4']
+                    'https://v4-ferraz.notion.site/Rotina-Ideal-de-um-Gestor-de-Tr-fego-a0a00d187619424ea1c165bb79ab4370?pvs=4',
+                    'https://v4-ferraz.notion.site/E-com-do-Zero-ea94125e090b41ca995855e10417ed3c?pvs=4',
+                    'https://v4-ferraz.notion.site/Retail-Varejo-ecbb0b331ea44923a922448916ba66a0?pvs=4',
+                    'https://v4-ferraz.notion.site/Ferramentas-b0f25ce99d9b49c5a5a35e6e7629bf0c?pvs=4',
+                    'https://v4-ferraz.notion.site/Account-Planning-04dd398c0cdf427db11983c366447c23?pvs=4',
+                    'https://v4-ferraz.notion.site/Checklist-para-Auditoria-de-Ferramentas-547a51ed9f754f05ab0c9ad70dc96f4b?pvs=4',
+                    'https://v4-ferraz.notion.site/Distribui-o-de-M-dia-Estrat-gias-2-4565b7a4f87649e383c1bed17ed3a505?pvs=4']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
