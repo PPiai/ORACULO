@@ -88,12 +88,12 @@ def sidebar():
     tabs = st.tabs(['Upload de Arquivos', 'Modelo da IA'])
     with tabs[0]:
         st.markdown(f'<h5 style="text-align: center;">Inteligência V4 Ferraz Piai & CO 1.0 </h5>', unsafe_allow_html=True)
-        tipo_arquivo = "Base de Conhecimento v4"
+        tipo_arquivo = TIPOS_ARQUIVOS_VALIDOS
         arquivo = ['https://vendas.v4company.com/glossario-marketing/',
                     'https://heyzine.com/flip-book/87da189f45.html',
                     'https://heyzine.com/flip-book/d33a44284a.html',
                     'https://v4company.com/', 
-                    'https://docs.google.com/document/d/1N0PggtNXzRxU7DSmgXLJNtDHVv7vGisLLhF1hC7aXAM/edit?usp=sharing']
+                    'https://v4-ferraz.notion.site/Rotina-Ideal-de-um-Gestor-de-Tr-fego-a0a00d187619424ea1c165bb79ab4370?pvs=4']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
