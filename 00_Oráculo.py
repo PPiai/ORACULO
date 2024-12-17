@@ -63,7 +63,7 @@ def pagina_chat():
 
     chain = st.session_state.get('chain')
     if chain is None:
-        st.error('Para não ocorrer erros, envie uma mensagem como "olá" para inicializar a memória do chat")
+        st.error('Para não ocorrer erros, envie uma mensagem como "olá" para inicializar a memória do chat')
         st.error('Carregue o Oráculo')
         st.stop()
 
