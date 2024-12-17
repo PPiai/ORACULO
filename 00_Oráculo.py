@@ -63,6 +63,7 @@ def pagina_chat():
 
     chain = st.session_state.get('chain')
     if chain is None:
+        st.error('Para não ocorrer erros, envie uma mensagem como "olá" para inicializar a memória do chat")
         st.error('Carregue o Oráculo')
         st.stop()
 
@@ -75,7 +76,7 @@ def pagina_chat():
     if input_usuario:
         chat = st.chat_message('human')
         chat.markdown(input_usuario)
-
+        
         chat = st.chat_message('ai')
         resposta = chat.write_stream(chain.stream({'input': input_usuario,'chat_history': memoria.buffer_as_messages}))
         
