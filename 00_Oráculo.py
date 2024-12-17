@@ -64,7 +64,7 @@ def pagina_chat():
     chain = st.session_state.get('chain')
     if chain is None:
         st.error('Carregue o Oráculo')
-        st.markdown(f'<h6 style="text-align: center;">Para não ocorrer erros, envie uma mensagem como "olá" para inicializar a memória do chat.</h6>', unsafe_allow_html=True)
+        st.markdown(f'<h6 style="text-align: center;">Para evitar erros, envie uma mensagem como "olá" para inicializar a memória do chat.</h6>', unsafe_allow_html=True)
         st.stop()
 
     memoria = st.session_state.get('memoria', MEMORIA)
