@@ -102,7 +102,8 @@ def sidebar():
                     'https://v4-ferraz.notion.site/Checklist-para-Auditoria-de-Ferramentas-547a51ed9f754f05ab0c9ad70dc96f4b?pvs=4',
                     'https://v4-ferraz.notion.site/Distribui-o-de-M-dia-Estrat-gias-2-4565b7a4f87649e383c1bed17ed3a505?pvs=4',
                     'https://v4-ferraz.notion.site/Rotinas-168ed1e2971442fabd9d48988fed3202?pvs=4',
-                    'https://v4-ferraz.notion.site/Padr-o-de-UTMs-01b41041e864469ab047b5a29b76b512?pvs=73']
+                    'https://v4-ferraz.notion.site/Padr-o-de-UTMs-01b41041e864469ab047b5a29b76b512?pvs=73',
+                    'https://v4-ferraz.notion.site/GROWTH-fbffa4424ce14b1d87457b9737706be2']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
