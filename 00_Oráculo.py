@@ -133,8 +133,7 @@ def sidebar():
                     'https://v4-ferraz.notion.site/04-Playbooks-Landing-Page-3fd3797c4b4644e08e13ebc5ad29f312',
                     'https://v4-ferraz.notion.site/05-Playbook-de-Estrat-gias-4497c444c49843be8ab21ab9d21a4bb9',
                     'https://v4-ferraz.notion.site/06-Playbook-de-Vendas-6e438418c93546a08c9a8c86e3deab49',
-                    'https://v4-ferraz.notion.site/07-Metas-e-OKR-s-para-PDV-5b6c25e73cb24212af0266c3dd2a6df9',
-                    'https://v4-ferraz.notion.site/V4-Ferraz-Comece-por-aqui-53b9d81566af46a481dc0c94018035ef?pvs=4']
+                    'https://v4-ferraz.notion.site/07-Metas-e-OKR-s-para-PDV-5b6c25e73cb24212af0266c3dd2a6df9']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
