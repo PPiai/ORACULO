@@ -104,7 +104,7 @@ def sidebar():
                     'https://v4-ferraz.notion.site/Rotinas-168ed1e2971442fabd9d48988fed3202?pvs=4',
                     'https://v4-ferraz.notion.site/Padr-o-de-UTMs-01b41041e864469ab047b5a29b76b512?pvs=73',
                     'https://v4-ferraz.notion.site/GROWTH-fbffa4424ce14b1d87457b9737706be2',
-                    'https://www.notion.so/v4-ferraz/V4-Ferraz-Comece-por-aqui-53b9d81566af46a481dc0c94018035ef']
+                    'https://v4-ferraz.notion.site/V4-Ferraz-Comece-por-aqui-53b9d81566af46a481dc0c94018035ef?pvs=74']
     with tabs[1]:
         st.markdown(f'<h5 style="text-align: center;">IA: Groq </h5>', unsafe_allow_html=True)
         provedor = 'Groq'
