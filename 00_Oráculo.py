@@ -13,6 +13,24 @@ TIPOS_ARQUIVOS_VALIDOS = [
     'Docs'
 ]
 
+CARGOS = {
+    'Gestores de Projetos ou Accounts' : '''Responsáveis pelo planejamento, execução e acompanhamento de projetos. Atuam como ponto de contato entre a equipe interna e os clientes, garantindo que entregas sejam realizadas dentro do prazo e conforme as expectativas. Gerenciam recursos e cronogramas, e solucionam problemas para assegurar o sucesso dos projetos.''',
+    'Gestores de Tráfego' : '''Focados em estratégias de mídia paga e orgânica, eles gerenciam campanhas publicitárias em plataformas como Google Ads, Facebook Ads, e outros canais de mídia. Trabalham para aumentar o tráfego qualificado e otimizar o ROI (Retorno sobre Investimento).''',
+    'Analista de CRM' : '''Especialista em gerenciar as relações com clientes por meio de sistemas de CRM (Customer Relationship Management). É responsável por segmentar públicos, planejar campanhas e otimizar a jornada do cliente para aumentar retenção e engajamento.''',
+    'Designers' : '''Criam materiais visuais, como peças gráficas, layouts de sites, posts para redes sociais e outros ativos visuais. Trabalham para garantir que a comunicação visual esteja alinhada com a identidade da marca e os objetivos estratégicos.''',
+    'Copywriters' : '''Especialistas em redação persuasiva. Criam textos para anúncios, e-mails, páginas de vendas, blogs e outros materiais, com foco em atrair, engajar e converter leads.''',
+    'Analista de UX/UI' : '''Responsável pela experiência do usuário (UX) e design de interface do usuário (UI). Conduz pesquisas, testes e análises para garantir que produtos digitais sejam funcionais, intuitivos e esteticamente agradáveis.''',
+    'Analista de Site' : '''Cuida da manutenção, performance e otimização de sites. Garante que o site esteja funcional, seguro e rápido, além de implementar melhorias baseadas em dados de análise de desempenho.''',
+    'Head' : '''Gestor da vertente ou da equipe, responsável por liderar e gerenciar o time. Define estratégias, alinha metas, supervisiona as entregas e garante que os objetivos da equipe estejam alinhados com os objetivos gerais da empresa. Atua como um elo entre a alta gestão e os membros do time.''',
+    'CAP' : '''Profissional que auxilia a vertente ou o time, proporcionando suporte estratégico e operacional. Trabalha em conjunto com o Head e a equipe para garantir a execução eficiente das tarefas, contribuindo com insights e ações práticas para o sucesso do grupo''',
+    'Analista de Growth' : '''Focado em identificar oportunidades de crescimento para o negócio. Trabalha com experimentos, otimizações e estratégias de aquisição e retenção de clientes para impulsionar resultados.''',
+    'Closers' : '''Especialistas em vendas, responsáveis por finalizar negociações e converter leads em clientes. Possuem alta capacidade de persuasão e foco em alcançar metas comerciais.''',
+    'BDR (Business Development Representative)' : '''Profissionais focados em prospectar e qualificar leads para a equipe de vendas. Trabalham na geração de oportunidades e no fortalecimento de relacionamentos comerciais.''',
+    'Financeiro' : '''Gerencia os recursos financeiros da empresa. Cuida do fluxo de caixa, orçamentos, pagamento de contas, faturamento e planejamento financeiro.''',
+    'People & Performance' : '''Área responsável por cuidar das pessoas da empresa. Atua em recrutamento, treinamento, desenvolvimento de colaboradores e gestão de desempenho, promovendo um ambiente de trabalho saudável e produtivo.''',
+    'Analista de BI (Business Intelligence)' : '''Responsável por coletar, organizar e analisar dados para fornecer insights estratégicos que apoiem a tomada de decisão. Cria dashboards, relatórios e análises que ajudam a empresa a identificar tendências, medir resultados e otimizar processos. Trabalha em estreita colaboração com outros times para garantir que os dados sejam utilizados de forma eficaz para atingir os objetivos da empresa.'''
+}
+
 CONFIG_MODELOS = {'Groq': 
                         {'modelos': 'llama-3.3-70b-versatile',
                          'chat': ChatGroq}
@@ -31,7 +49,7 @@ def carrega_arquivos(tipo_arquivo, arquivo):
         documento = carrega_site(arquivo)
 
 def carrega_modelo(provedor, modelo, api_key, tipo_arquivo, arquivo):
-    system_message = f'''Você é um assistente amigável chamado Oráculo.
+    system_message = f'''Você é um assistente amigável chamado Oráculo que é utilizada pela empresa v4 ferraz piai & CO.
 Você possui acesso às seguintes informações vindas 
 de um documento {tipo_arquivo}: 
 
@@ -39,7 +57,11 @@ de um documento {tipo_arquivo}:
 {arquivo}
 ####
 
-Utilize as informações fornecidas para basear as suas respostas, você não pode procurar por informações fora de seus documentos dispolibilizados e pode passar o links de seu documento.
+Utilize as informações fornecidas para basear as suas respostas, você não pode procurar por informações fora de seus documentos dispolibilizados e pode passar o links de seu documento enviando somente 1 link por resposta.
+
+Utilize de respostas exatamente coerentes com o seu {arquivo}, preciso que quando algo que tenha no arquivo vc responda igualzinho o arquivo, utilizando o contexto para responder igualmente seus {arquivo} disponiveis.
+
+Na empresa temos alguns nomenclaturas de cargos que vc desconhece, todos os nomes que vc tem que conhecer está em {CARGOS}.
 
 Sempre que houver $ na sua saída, substita por R$.
 
